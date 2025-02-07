@@ -1,13 +1,13 @@
-name: my first workflow
+name: Simple Workflow
 
-on: push
+on:
+  push:
+    branches:
+      - main
 
 jobs:
-    first_job:
-        runs-on: ubuntu-latest
-        steps:
-        - name: Print Message
+  simple-job:
+    runs-on: ubuntu-latest
+    steps:
+       - name: Print Message
         run: echo "Hello, GitHub Actions!"
-        
-
-    
