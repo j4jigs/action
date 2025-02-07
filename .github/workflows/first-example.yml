@@ -6,8 +6,8 @@ jobs:
     first_job:
         runs-on: ubuntu-latest
         steps:
-        -name: welcome message
-         run: ls
+        - name: Print Message
+        run: echo "Hello, GitHub Actions!"
         
 
     
