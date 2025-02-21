@@ -4,11 +4,11 @@ on: push
    
 jobs:
     simple-job:
-      runs-on: ubuntu:latest
+      runs-on: ubuntu-latest
       steps:
          - name: Print Message
            run: echo "Hello, GitHub Actions!"
 
-        - name: lis files
+        - name: list files
            run: ls
 
