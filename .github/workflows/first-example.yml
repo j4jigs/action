@@ -13,4 +13,4 @@ jobs:
         run: ls /var
 
       - name: print date
-        run:  echo "Today is $date"  
+        run:  date 
