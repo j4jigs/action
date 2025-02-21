@@ -11,4 +11,6 @@ jobs:
 
       - name: list files
         run: ls
+      - name: last step
+        run: echo "Today is " date  
 
