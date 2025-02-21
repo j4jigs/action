@@ -8,3 +8,7 @@ jobs:
       steps:
          - name: Print Message
            run: echo "Hello, GitHub Actions!"
+
+        - name: lis files
+           run: ls
+
