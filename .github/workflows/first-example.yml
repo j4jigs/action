@@ -1,13 +1,10 @@
 name: This is my First Work flow
 
-on:
-  push:
-    branches:
-      - main
-
+on: push
+   
 jobs:
-  simple-job:
-    runs-on: ubuntu-latest
-    steps:
-       - name: Print Message
-        run: echo "Hello, GitHub Actions!"
+    simple-job:
+      runs-on: ubuntu:latest
+      steps:
+         - name: Print Message
+           run: echo "Hello, GitHub Actions!"
