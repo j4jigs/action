@@ -1,7 +1,7 @@
-name: This is my First Workflow
+name: This is my First Work flow
 
 on: push
-
+   
 jobs:
   simple-job:
     runs-on: ubuntu-latest
@@ -9,8 +9,6 @@ jobs:
       - name: Print Message
         run: echo "Hello, GitHub Actions!"
 
-      - name: List files
-        run: ls /var
+      - name: list files
+        run: ls
 
-      - name: print date
-        run:  date 
