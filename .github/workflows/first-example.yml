@@ -6,8 +6,11 @@ jobs:
     first_job:
       runs-on: ubuntu-latest
       steps:
-        - name: welcome message
-          run: echo "My first Github action job"
+       - name: checkout repo
+         uses: actions/checkout@v4
 
-        - name: list files
-          run: ls /var  
+       - name: welcome message
+         run: echo "My first Github action job"
+
+       - name: list files
+         run: ls /var  
