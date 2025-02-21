@@ -14,5 +14,5 @@ jobs:
       run: cowsay -f dragon "Run for cover, I am a DRAGON....RAWR" >> dragon.txt
     
    
-  #  - name: dragon-text-file
-  #    path: dragon.txt
+    - name: dragon-text-file
+      run: cat dragon.txt
