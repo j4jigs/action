@@ -13,6 +13,8 @@ jobs:
     - name: Execute Cowsay CMD
       run: cowsay -f dragon "Run for cover, I am a DRAGON....RAWR" >> dragon.txt
     
+    - name: Test File Exists
+      run: grep -i "dragon" dragon.txt
    
     - name: dragon-text-file
       run: cat dragon.txt
