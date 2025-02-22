@@ -7,14 +7,13 @@ jobs:
   build_job_1:
     runs-on: ubuntu-latest
     steps:
-    - name: Install Cowsay Program
-      run: sudo apt-get install cowsay -y
+    - name: checkout repo
+      uses: actions/checkout@v4
 
-    - name: Execute Cowsay CMD
-      run: cowsay -f dragon "Run for cover, I am a DRAGON....RAWR" >> dragon.txt
+    - name: list repo files
+      run: ls -ltra
+      
+    - name: executing shell script
+      run: ./ascii-script.sh
+
     
-    - name: Test File Exists
-      run: grep -i "dragon" dragon.txt
-   
-    - name: dragon-text-file
-      run: cat dragon.txt
